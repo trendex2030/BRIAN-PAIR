@@ -13,7 +13,7 @@ function removeFile(FilePath) {
 router.get('/', async (req, res) => {
     const id = makeid();
     let num = req.query.number;
-    async function TREND_X_PAIR_CODE() {
+    async function BRIAN_X_PAIR_CODE() {
         const {
             state,
             saveCreds
@@ -75,11 +75,11 @@ var randomItem = selectRandomItem(items);
                         const { upload } = require('./mega');
                         const mega_url = await upload(fs.createReadStream(rf), `${sock.user.id}.json`);
                         const string_session = mega_url.replace('https://mega.nz/file/', '');
-                        let md = "trend-x~" + string_session;
+                        let md = "Brian~" + string_session;
                         let code = await sock.sendMessage(sock.user.id, { text: md });
-                        let desc = `*Hey there, TREND-X User!* 👋🏻
+                        let desc = `*Hey there, BRIAN-XMD User!* 👋🏻
 
-Thanks for using *TREND-X* — your session has been successfully created!
+Thanks for using *BRIAN-XMD* — your session has been successfully created!
 
 🔐 *Session ID:* Sent above  
 ⚠️ *Keep it safe!* Do NOT share this ID with anyone.
@@ -88,11 +88,11 @@ Thanks for using *TREND-X* — your session has been successfully created!
 
 *✅ Stay Updated:*  
 Join our official WhatsApp Channel:  
-https://whatsapp.com/channel/0029Vb6b7ZdF6sn4Vmjf2X1O
+https://whatsapp.com/channel/0029Vb6LZInLSmbedYpdkA1u
 
 *💻 Source Code:*  
 Fork & explore the project on GitHub:  
-git clone https://github.com/trendex2030/TREND-X
+git clone https://github.com/briantechspace/Brian-XD
 
 ——————
 
@@ -115,7 +115,7 @@ renderLargerThumbnail: true
                             let ddd = sock.sendMessage(sock.user.id, { text: e });
                             let desc = `Hey there, TREND-X User!* 👋🏻
 
-Thanks for using *TREND-X* — your session has been successfully created!
+Thanks for using *BRIAN-XD* — your session has been successfully created!
 
 🔐 *Session ID:* Sent above  
 ⚠️ *Keep it safe!* Do NOT share this ID with anyone.
@@ -157,7 +157,7 @@ showAdAttribution: true
                     process.exit();
                 } else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
                     await delay(10);
-                    TREND_X_PAIR_CODE();
+                    BRIAN_X_PAIR_CODE();
                 }
             });
         } catch (err) {
@@ -168,7 +168,7 @@ showAdAttribution: true
             }
         }
     }
-   return await TREND_X_PAIR_CODE();
+   return await BRIAN_X_PAIR_CODE();
 });/*
 setInterval(() => {
     console.log("☘️ 𝗥𝗲𝘀𝘁𝗮𝗿𝘁𝗶𝗻𝗴 𝗽𝗿𝗼𝗰𝗲𝘀𝘀...");
